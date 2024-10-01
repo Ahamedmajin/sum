@@ -1,0 +1,66 @@
+<html>
+  <body>
+  <p id="you">Ahamed</p>
+<button onclick="vhan()" >change</button>
+<script>
+  var pop= document.getElementById("you")
+ // console.log(pop.textContent)
+function vhan()
+{
+ pop.textContent="Majin"
+}
+</script>
+</body>
+</html>
+<br>
+<br>
+<br>
+<html>
+  <body>
+    <input style="width:50px;background-color:skyblue" type="number"id="num1" >
+      <input style="width:50px;background-color:skyblue"  type="number" id="num2" >
+      <button onclick="fif()">+</button>
+        <button onclick="fifo()">-</button>
+        <button onclick="fifop()">×</button>
+        <button onclick="fifog()">÷</button>
+      
+      <p id="resul">result</p>
+      <script>
+        var box1=document.getElementById("num1")
+        var box2=document.getElementById("num2")
+        
+        var resut=document.getElementById("resul")
+        
+      
+        function fif()
+        {
+          var bop1=Number(box1.value)
+        var bop2=Number(box2.value)
+        var total =bop1+bop2
+        resut.textContent=total
+        }
+        function fifo()
+        {
+          var bop1=Number(box1.value)
+          var bop2=Number(box2.value)
+          var total =bop1-bop2
+          resut.textContent=total
+        }
+        function fifop()
+        {
+          var bop1=Number(box1.value)
+          var bop2=Number(box2.value)
+          var total =bop1*bop2
+          resut.textContent=total
+        }
+        function fifog()
+        {
+          var bop1=Number(box1.value)
+          var bop2=Number(box2.value)
+          var total =bop1/bop2
+          resut.textContent=total
+        }
+      </script>
+    
+  </body>
+</html>
